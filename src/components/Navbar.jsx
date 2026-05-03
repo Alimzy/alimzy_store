@@ -1,3 +1,5 @@
+import { ShoppingCart, User, Search } from 'lucide-react'
+
 function Navbar() {
   return (
     <nav className="flex justify-between items-center px-10 py-4 border-b">
@@ -13,9 +15,7 @@ function Navbar() {
       </ul>
 
        <div className="hidden md:flex items-center bg-gray-100 rounded-full px-4 py-2 gap-2">
-        <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-4.35-4.35M17 11A6 6 0 1 1 5 11a6 6 0 0 1 12 0z" />
-        </svg>
+        <Search size={18} className="text-gray-400" />
         <input
           type="text"
           placeholder="Search for products..."
@@ -25,8 +25,8 @@ function Navbar() {
 
       
       <div className="flex items-center gap-4">
-        <button className="text-xl">🛒</button>
-        <button className="text-xl">👤</button>
+        <button><ShoppingCart size={20} /></button>
+        <button><User size={20} /></button>
       </div>
 
     </nav>
