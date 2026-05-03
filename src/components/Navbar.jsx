@@ -14,7 +14,7 @@ function Navbar() {
         <li className="cursor-pointer hover:underline">Brands</li>
       </ul>
 
-       <div className="hidden md:flex items-center bg-gray-100 rounded-full px-4 py-2 gap-2">
+       <div className="flex items-center bg-gray-100 rounded-full px-4 py-2 gap-2">
         <Search size={18} className="text-gray-400" />
         <input
           type="text"
