@@ -6,6 +6,7 @@ import Hero from './components/Hero.jsx'
 import BrandBar from './components/BrandBar.jsx'
 import NewArrival from './components/NewArrival.jsx'
 import TopSelling from './components/TopSelling.jsx'
+import Browse from './components/Browse.jsx'
 function App() {
 
 
@@ -17,6 +18,7 @@ function App() {
       <BrandBar />
      <NewArrival/>
      <TopSelling/>
+     <Browse/>
     </>
   )
 }
