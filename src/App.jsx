@@ -7,6 +7,7 @@ import BrandBar from './components/BrandBar.jsx'
 import NewArrival from './components/NewArrival.jsx'
 import TopSelling from './components/TopSelling.jsx'
 import Browse from './components/Browse.jsx'
+import Review from './components/Review.jsx'
 function App() {
 
 
@@ -19,6 +20,8 @@ function App() {
      <NewArrival/>
      <TopSelling/>
      <Browse/>
+     <Review />
+     
     </>
   )
 }
