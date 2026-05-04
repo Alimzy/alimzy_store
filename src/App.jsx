@@ -5,6 +5,7 @@ import Announcement from './components/Announcement.jsx'
 import Hero from './components/Hero.jsx'
 import BrandBar from './components/BrandBar.jsx'
 import NewArrival from './components/NewArrival.jsx'
+import TopSelling from './components/TopSelling.jsx'
 function App() {
 
 
@@ -15,6 +16,7 @@ function App() {
       <Hero />
       <BrandBar />
      <NewArrival/>
+     <TopSelling/>
     </>
   )
 }
