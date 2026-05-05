@@ -8,6 +8,7 @@ import NewArrival from './components/NewArrival.jsx'
 import TopSelling from './components/TopSelling.jsx'
 import Browse from './components/Browse.jsx'
 import Review from './components/Review.jsx'
+import Footer from './components/Footer.jsx'
 function App() {
 
 
@@ -21,7 +22,7 @@ function App() {
      <TopSelling/>
      <Browse/>
      <Review />
-     
+     <Footer />
     </>
   )
 }
