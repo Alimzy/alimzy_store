@@ -33,7 +33,7 @@ function Navbar(props) {
         <button className="relative text-xl" onClick={() => setCartCount(cartCount + 1)}>
     <ShoppingCart size={20} />
     {props.cartCount > 0 && (
-        <span className="absolute -top-2 -right-2 bg-black text-white text-xs w-4 h-4 rounded-full flex items-center justify-center">
+        <span className="absolute -top-2 -right-2 bg-red-500 text-white text-xs w-4 h-4 rounded-full flex items-center justify-center">
           {props.cartCount}
         </span>
     )}
