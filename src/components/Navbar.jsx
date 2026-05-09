@@ -3,8 +3,8 @@ import { useState } from 'react'
 
 
 
-function Navbar() {
-  const [cartCount, setCartCount] = useState(0)
+function Navbar(props) {
+ 
   
   return (
     <nav className="flex justify-between items-center px-10 py-4 border-b">
@@ -32,9 +32,9 @@ function Navbar() {
       <div className="flex items-center gap-4">
         <button className="relative text-xl" onClick={() => setCartCount(cartCount + 1)}>
     <ShoppingCart size={20} />
-    {cartCount > 0 && (
+    {props.cartCount > 0 && (
         <span className="absolute -top-2 -right-2 bg-black text-white text-xs w-4 h-4 rounded-full flex items-center justify-center">
-            {cartCount}
+          {props.cartCount}
         </span>
     )}
 </button>

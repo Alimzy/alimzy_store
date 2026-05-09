@@ -10,7 +10,9 @@ function ProductCard(props){
                 <p className="text-yellow-400 text-sm">⭐⭐⭐⭐</p>
                 <p className="font-bold">${props.price.toFixed(2)}</p>
               </div>
-                        
+              <button className="absolute bottom-4 left-1/2 transform -translate-x-1/2 bg-black text-white px-6 py-2 rounded-full text-sm hover:bg-gray-800 transition-colors" onClick={() => props.setCartCount(prevCount => prevCount + 1)}>
+                Add to Cart
+              </button>
 
           </div>
         

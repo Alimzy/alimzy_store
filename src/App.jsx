@@ -10,15 +10,15 @@ import Browse from './components/Browse.jsx'
 import Review from './components/Review.jsx'
 import Footer from './components/Footer.jsx'
 function App() {
-
+ const [cartCount, setCartCount] = useState(0)
 
   return (
      <>
       <Announcement />
-      <Navbar />
+      <Navbar cartCount={cartCount}  />
       <Hero />
       <BrandBar />
-     <NewArrival/>
+     <NewArrival setCartCount={setCartCount} />
      <TopSelling/>
      <Browse/>
      <Review />
