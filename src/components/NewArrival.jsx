@@ -1,5 +1,24 @@
 import ProductCard from "./ProductCard" 
+import { useState, useEffect } from 'react'
 function NewArrival(props) {
+    const [products, setProducts] = useState([])
+    const [loading, setLoading] = useState(true)
+    
+    useEffect(() => {
+    const fetchProducts = async () => {
+        try {
+            const response = await fetch("https://fakestoreapi.com/products?limit=4")
+            const data = await response.json()
+            setProducts(data)
+            setLoading(false)
+        } catch (error) {
+            console.log(error)
+            setLoading(false)
+        }
+    }
+
+    fetchProducts()
+}, [])
     return (
        
         <div className="px-16 py-12 text-center">
