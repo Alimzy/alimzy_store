@@ -29,7 +29,7 @@ function NewArrival(props) {
                 <ProductCard setCartCount={props.setCartCount} name="BAZ" price={150} />
                 <ProductCard setCartCount={props.setCartCount} name="NATIVE" price={60} />
              </div>
-             <button className="mt-8 px-14 py-3 border border-black rounded-full text-sm hover:bg-black hover:text-white transition-colors">
+             <button className="mt-8 -14 py-3 border border-black rounded-full text-sm hover:bg-black hover:text-white transition-colors">
   View All
 </button>
         </div>
